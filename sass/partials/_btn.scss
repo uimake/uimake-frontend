@@ -1,0 +1,41 @@
+/*正文链接按钮*/
+.a-link {
+  position: relative;
+  overflow: hidden; /*bimian tianchong dao waimian*/
+  border: 1px solid $prmary-color;
+  display: inline-block;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  width: 130px;
+  height: 50px;
+  color: $prmary-color;
+  display: inline-block;
+  line-height: 50px;
+  font-size: 18px;
+  z-index: 1;
+  &:after {
+    content: "";
+    position: absolute;
+    left: -1px;
+    top: 0;
+    width: 0;
+    height: 50px;
+    border-radius: 50px;
+    background-color: $prmary-color;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    z-index: -1;
+  }
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid $prmary-color;
+    &:after {
+      width: 130px;
+    }
+  }
+}

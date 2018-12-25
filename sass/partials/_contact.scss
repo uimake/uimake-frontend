@@ -1,0 +1,38 @@
+.contact {
+  margin: 150px 15px 160px;
+  h1 {
+    margin-bottom: 100px;
+    color: $prmary-color;
+  }
+  h3 {
+    margin-bottom: 80px;
+  }
+  i {
+    color: $prmary-color;
+  }
+  @media (max-width: 767px) {
+    margin: 100px 15px 40px;
+
+    h1 {
+      margin-bottom: 40px;
+      color: $prmary-color;
+    }
+    .contact h3 {
+      margin-bottom: 40px;
+    }
+    .address {
+      > div {
+        background-color: #fff;
+        padding-bottom: 30px;
+        padding-top: 30px;
+        margin-bottom: 10px;
+      }
+      h4 {
+        font-size: 14px;
+      }
+    }
+  }
+}
+.mar-bot30 {
+  margin-bottom: 30px;
+}

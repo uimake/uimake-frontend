@@ -1,0 +1,124 @@
+/*banner*/
+.banner {
+  /*width:100vw;在window系统下应减去滚动条的宽度*/
+  height: 100vh;
+  overflow: hidden;
+  //nth-of-type 需要同级
+  .owl-item:nth-of-type(1) {
+    .item {
+      background-image: url("../img/banner1.jpg");
+      background-position: center center;
+      background-size: cover;
+    }
+  }
+  .owl-item:nth-of-type(2) {
+    .item {
+      background-image: url("../img/banner22.jpg");
+      background-position: center center;
+      background-size: cover;
+    }
+  }
+  .owl-item:nth-of-type(3) {
+    .item {
+      background-image: url("../img/html5.jpg");
+      background-position: center center;
+      background-size: cover;
+    }
+  }
+  .item {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    .mask {
+      width: 100vw;
+      height: 100vh;
+      background-image: linear-gradient(
+        135deg,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      );
+      background-image: -webkit-linear-gradient(
+        135deg,
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+      );
+      position: absolute;
+      left: 0px;
+      top: 0px;
+    }
+    .title {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      padding-left: 15px;
+      padding-right: 15px;
+      -webkit-transform: translate(0, -50%);
+      -moz-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      -o-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+      color: #fff;
+      text-align: center;
+      h3 {
+        font-size: 48px;
+        font-weight: 200;
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+      h5 {
+        font-size: 24px;
+        font-weight: 200;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+  }
+  //位置调整
+  .owl-carousel {
+    //不写高度为0 指示器位置不对
+    overflow: hidden;
+  }
+  .owl-pagination {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+  }
+  .owl-controls .owl-buttons .owl-prev {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    margin-top: -24px;
+  }
+  .owl-controls .owl-buttons .owl-next {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    margin-top: -24px;
+  }
+  @media (max-width: 767px) {
+    width: 100%;
+    height: 100vmin;
+    margin-top: 50px;
+    .item {
+      width: 100vw;
+      height: 100vmin;
+      .title {
+        h3 {
+          font-size: 24px;
+          font-weight: 400;
+          margin-bottom: 10px;
+        }
+        h5 {
+          font-weight: 300;
+          font-size: 18px;
+        }
+      }
+    }
+    /*移动端向前向后翻页箭头不显示 */
+    .owl-buttons {
+      display: none;
+    }
+  }
+}

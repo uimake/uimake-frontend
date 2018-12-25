@@ -1,0 +1,118 @@
+.blog {
+  padding-left: 0;
+  li {
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+    overflow: hidden;
+    transition: all 0.3s;
+    a {
+      color: #505050;
+    }
+    &:hover {
+      box-shadow: 0 8px 16px #c3c3c3;
+      .right h3 {
+        &:after {
+          width: 80%;
+        }
+      }
+    }
+    .left {
+      float: left;
+      width: 30%;
+    }
+    .right {
+      float: left;
+      padding-left: 15px;
+      width: 70%;
+      h3 {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        &:after {
+          content: "";
+          display: block;
+          width: 30px;
+          height: 2px;
+          margin-top: 8px;
+          background-color: $prmary-color;
+          -webkit-transition: all 0.5s;
+          -moz-transition: all 0.5s;
+          -ms-transition: all 0.5s;
+          -o-transition: all 0.5s;
+          transition: all 0.5s;
+        }
+      }
+      .summary {
+        margin-bottom: 15px;
+      }
+      .info-icon {
+        color: #909090;
+        margin-right: 15px;
+      }
+    }
+  }
+}
+.sidebar {
+  position: fixed;
+  z-index: 99;
+  padding: 0 15px;
+  // background-color: white;
+  h3 {
+    font-weight: 300;
+  }
+  hr {
+    border-top: 2px solid $prmary-color;
+  }
+  ul {
+    padding-left: 0;
+    li {
+      float: left;
+      padding: 9px;
+      margin: 5px;
+      background-color: white;
+      border-radius: 4px;
+      transition: all 0.3s;
+      &:hover {
+        background-color: $prmary-color;
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+}
+.sort-mobile {
+  position: fixed;
+  z-index: 1060;
+  bottom: 5%;
+  right: 5%;
+  border-radius: 50%;
+  background-color: $prmary-color;
+  height: 50px;
+  width: 50px;
+  > i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  .sort-mobile-screen {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    // bottom: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+    padding-top: 0;
+    background-color: #ccc;
+  }
+  .sort-mobile-close {
+    padding-right: 20px;
+    a {
+      color: $prmary-color;
+    }
+  }
+}

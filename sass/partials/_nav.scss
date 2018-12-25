@@ -1,0 +1,51 @@
+/*首页模块下边距*/
+.navbar {
+  margin-bottom: 0;
+  .navbar-header {
+    position: relative;
+    .navbar-toggle {
+      position: absolute;
+      left: 50%;
+      margin-left: -22px;
+    }
+  }
+  .active {
+    background-color: #000;
+    a {
+      color: #e7fdff;
+    }
+  }
+}
+/*中英文切换*/
+.language {
+  cursor: pointer;
+  float: right;
+  display: inline-block;
+  color: #000;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-size: 12px;
+  span {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    color: #000;
+  }
+
+  @media (max-width: 767px) {
+    margin-left: 0; /*不清零影响定位，定位时会把margin算在内*/
+    margin-right: 0; /*不清零影响定位*/
+    position: absolute;
+    top: 0;
+    right: 15px;
+  }
+}
+.navbar-inverse .language {
+  color: #fff;
+  cursor: pointer;
+  span {
+    color: #fff;
+  }
+}

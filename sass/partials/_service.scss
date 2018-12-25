@@ -1,0 +1,68 @@
+#service {
+  background: url("../img/hero.jpg") no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  .col-sm-3 {
+    padding-left: 0;
+    padding-right: 0;
+    height: 400px;
+    color: #f6f7ff;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    .mask-item {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      p {
+        margin-left: 15px;
+        margin-right: 15px;
+        height: 0;
+        -webkit-transition: height 0.5s ease;
+        -moz-transition: height 0.5s ease;
+        -ms-transition: height 0.5s ease;
+        -o-transition: height 0.5s ease;
+        transition: height 0.5s ease;
+        overflow: hidden;
+      }
+      .idea-icon {
+        margin-top: 35px;
+      }
+    }
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+      color: $prmary-color;
+      .mask-item {
+        p {
+          height: 80px;
+        }
+        .idea-icon {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    .col-xs-6 {
+      background-color: rgba(0, 0, 0, 0.8);
+      color: $prmary-color;
+      .mask-item {
+        p {
+          height: 80px;
+        }
+        .idea-icon {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}

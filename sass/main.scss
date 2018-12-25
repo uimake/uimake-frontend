@@ -1,0 +1,48 @@
+@import "bootstrap";
+@import "partials/reset";
+@import "partials/nav";
+@import "partials/banner";
+@import "partials/btn";
+@import "partials/news";
+@import "partials/service";
+@import "partials/project";
+@import "partials/footer";
+@import "partials/contact";
+@import "partials/portfolio/portfolio";
+@import "partials/details/details";
+@import "partials/resume/resume";
+@import "partials/blog";
+#nav-scroll {
+  transition: all 0.3s;
+}
+.navbar-inverse {
+  @media (max-width: 767px) {
+    background-color: #000;
+  }
+}
+.rel {
+  position: relative;
+}
+.z20 {
+  z-index: 20;
+}
+.over-hid {
+  overflow: hidden;
+}
+ul,
+ul li {
+  list-style: none;
+}
+.mar-bot40 {
+  margin-bottom: 40px;
+}
+/*禁止链接访问后虚框*/
+a,
+a:hover,
+a:focus {
+  outline: none;
+  text-decoration: none;
+}
+h4 {
+  font-weight: 300;
+}

@@ -1,0 +1,52 @@
+.list {
+  margin-top: 130px;
+  margin-bottom: 80px;
+  h1 {
+    margin-bottom: 80px;
+    color: $prmary-color;
+  }
+  .menu {
+    margin-bottom: 50px;
+    button {
+      margin-bottom: 5px;
+    }
+    button.btn-info {
+      background-color: $prmary-color;
+      border-color: $prmary-color;
+    }
+    button.btn {
+      &:focus {
+        outline: #ccc auto 5px;
+        background-color: #03a9f4;
+      }
+    }
+  }
+}
+#container-sort {
+  padding-right: 0;
+  //padding-left:; 用js动态计算
+  .item {
+    padding: 0;
+  }
+}
+@media (min-width: 300px) {
+  #container-sort .col-xs-6 {
+    width: 48%;
+    padding: 0.5%;
+    //由于分类框高度已经被动态计算了出来，所以高度可以用百分比
+  }
+}
+@media (min-width: 992px) {
+  #container-sort .col-md-3 {
+    width: 23%;
+    padding: 0.5%;
+    //由于分类框高度已经被动态计算了出来，所以高度可以用百分比
+  }
+}
+//图片项目展示页
+.portfoilo-img {
+  text-align: center;
+  .img-responsive {
+    display: inline-block;
+  }
+}
